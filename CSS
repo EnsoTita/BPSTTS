@@ -1,0 +1,70 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dashboard {
+  width: 95%;
+  max-width: 600px;
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+.menu {
+  display: flex;
+  background-color: #4f46e5;
+}
+
+.menu button {
+  flex: 1;
+  padding: 15px;
+  background: transparent;
+  color: white;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.menu button.aktif {
+  background-color: #3730a3;
+}
+
+.menu button:hover {
+  background-color: #4338ca;
+}
+
+.konten {
+  padding: 30px;
+  position: relative;
+  min-height: 250px;
+}
+
+.halaman {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  right: 30px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.4s ease;
+  display: none;
+}
+
+.halaman.aktif {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+}
