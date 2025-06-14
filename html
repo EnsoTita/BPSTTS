@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard Pribadi</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div class="dashboard">
+    <nav class="menu">
+      <button onclick="tampilkan('beranda')" id="btn-beranda" class="aktif">Beranda</button>
+      <button onclick="tampilkan('tentang')" id="btn-tentang">Tentang</button>
+      <button onclick="tampilkan('proyek')" id="btn-proyek">Proyek</button>
+      <button onclick="tampilkan('kontak')" id="btn-kontak">Kontak</button>
+    </nav>
+
+    <main class="konten">
+      <section id="beranda" class="halaman aktif">
+        <h2>Selamat Datang!</h2>
+        <p>Ini adalah dashboard pribadiku. Jelajahi menu lainnya.</p>
+      </section>
+      <section id="tentang" class="halaman">
+        <h2>Tentang Saya</h2>
+        <p>Saya senang belajar pengembangan web dan desain UI.</p>
+      </section>
+      <section id="proyek" class="halaman">
+        <h2>Proyek</h2>
+        <ul>
+          <li>Aplikasi Catatan</li>
+          <li>Landing Page Bisnis</li>
+          <li>Linktree Custom</li>
+        </ul>
+      </section>
+      <section id="kontak" class="halaman">
+        <h2>Kontak</h2>
+        <p>Email: kamu@email.com</p>
+        <p>Instagram: @kamu</p>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
